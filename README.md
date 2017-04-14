@@ -1,2 +1,2 @@
-# try2
-C++ Primer Plus, Stephen Prata, chapter 07, exercise 06
+# 07.Funkcje
+C++ Primer Plus, Stephen Prata, chapter 07

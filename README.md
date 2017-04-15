@@ -1,2 +1,2 @@
-# 07.Funkcje
-C++ Primer Plus, Stephen Prata, chapter 07
+Język C++ Szkoła programowania, 
+Rozwiązania zadań sprawdzających z poszczególnych rozdziałów.

@@ -1,1 +1,2 @@
-tresc nr 1
+tresc nr 1/
+zmiana tresci na now¹

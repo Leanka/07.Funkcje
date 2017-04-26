@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cctype>
-#include <cstring>
+//#include <cctype>         //przy urzyciu isspace();
+#include <cstring>          //przy urzyciu strlen();
 using namespace std;
 
 const int SLEN = 30;
@@ -51,7 +51,7 @@ int getinfo(student pa[], int n)
 
         cout << "   Imie:   ";
         cin.get(pa[i].fullname, SLEN);
-        if(isspace(*(pa[i]).fullname)) //jesli podano znak bialy zakoncz wczytywanie // if(0 == strlen(pa[i].fullname))
+        if(strlen(pa[i].fullname) == 0) //albo if(isspace(*(pa[i]).fullname) - jesli podano znak bialy zakoncz wczytywanie
             return i;
         while(cin.get() != '\n') //czyszczenie bufora
             continue;

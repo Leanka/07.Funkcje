@@ -12,25 +12,33 @@ int main()
     char ch;
     showmenu();
 
-    while(cin.get(ch))
+    while(cin >> ch)
     {
-        cin.get();
+
         switch(ch)
         {
             case 'a' :
             case 'A' : menua();
+
                         break;
             case 'b' :
             case 'B' : menub();
+
                         break;
             case 'c' :
             case 'C' : menuc();
+
                         break;
             case 'k' :
             case 'K' : cout << "\nKoniec tego dobrego!\n";
                                 return 0;
             default : cout << "\nPodaj poprawne dane.\n";
+                        break;
+
+
         }
+        cin.clear();    //"restets any error flags on the stream"
+        cin.sync();     //"ignores anything that could be left in the stream"
         showmenu();
     }
 
@@ -39,8 +47,8 @@ int main()
 void showmenu()
 {
     cout << "\nMasz do wyboru: \n"
-         << "A. Sluchaj     B.Placz\n"
-         << "C. Chrumkaj    K.Koncz\n"
+         << "A. S³uchaj     B.P³acz\n"
+         << "C. Chrumkaj    K.Koñcz\n"
          << "Wybierz dzialanie: ";
 }
 void menua()
@@ -53,5 +61,5 @@ void menub()
 }
 void menuc()
 {
-    cout << "\nChrum chrum, ty mala swinko.\n";
+    cout << "\nChrum chrum, ty mala œwinko.\n";
 }

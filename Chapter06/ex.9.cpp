@@ -58,7 +58,7 @@ int main()
     int ile = 0;
     for(i = 0; i < wielkosc; ++i)
     {
-        if(dane[i].kwota >= 10000)            //wyswietlanie zawartosci zawartosci tablicy powyzej danej kwoty
+        if(dane[i].kwota >= 10000)            //wyswietlanie zawartosci tablicy powyzej danej kwoty
         {
             cout << "\t" << dane[i].nazwisko << endl;
             ++ile;           //jesli choc jeden rekord z tablcy spelnia warunek, zwieksz p jeden

@@ -13,9 +13,10 @@ int main()
     int spolgloska = 0;
     int inne = 0;
 
-    while(cin >> slowo && (slowo[0] != 'q' && slowo[1] != ' '))
+    while(cin >> slowo && (slowo[0] != 'q' && slowo[1] != ' '))     /*wczytuje pojedynczy obiekt string
+                                                                    i sprawdza pierwsz¹ litere przez indeks tablicowy*/
     {
-        if(isalpha(slowo[0]))
+        if(isalpha(slowo[0]))   //jeœli litera
         {
            switch(slowo[0])
            {
@@ -38,7 +39,7 @@ int main()
                     break;
            }
         }
-        else if(!(isalpha(slowo[0])) && !(isblank(slowo[0])) && !(ispunct(slowo[0])) )
+        else if(!(isalpha(slowo[0])) && !(isblank(slowo[0])) && !(ispunct(slowo[0])) )      //jeœli nie litera, nie  znak bia³y i nie interpunkcja
             inne++;
 
     }

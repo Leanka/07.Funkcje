@@ -46,7 +46,7 @@ int main()
         if(dane[i].kwota >= 10000)
         {
             cout << "\t" << dane[i].nazwa << endl;
-            ++ile;           //jesli choc jeden rekord z tablcy spelnia warunek, zwieksz p jeden
+            ++ile;           //jesli choc jeden rekord z tablcy spelnia warunek, zwieksz o jeden
         }
     }
     if(ile == 0)            //jesli zaden rekord z tablicy nie spelnil warunku ile pozostalo = 0

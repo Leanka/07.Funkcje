@@ -78,11 +78,14 @@ int main()
                 return 0;
 
             default:
-                    cin.clear();                //zerownie obiektu wejsciowego
-                    while(cin.get() != '\n')       //odczytywanie pozostalych danych wejsciowych az do znaku nowegpo wiersza
-                        cin.get();
+                   // cin.clear();
+                   // while(cin.get() != '\n')       //odczytywanie pozostalych danych wejsciowych az do znaku nowego wiersza
+                   //     cin.get();
                 cout << "\nProsze podac poprawne dane.\n";
+                break;
         }
+        cin.clear();
+        cin.sync();
         showmenu();
     }
 
